@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{9DA30F44-4BEC-9C8A-5BE6-C986AD8EFF65}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "StateMachineTest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
