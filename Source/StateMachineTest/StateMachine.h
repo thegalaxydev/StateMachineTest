@@ -7,7 +7,7 @@ public:
 	State(const char* name) { m_name = name; }
 
 	virtual void start(State* previousState) {};
-	virtual State* step() = 0;
+	virtual State* step(float dt) = 0;
 	virtual void finish() {};
 
 	const char* getName() { return m_name; }
@@ -19,6 +19,7 @@ private:
 class STATEMACHINETEST_API StateMachine
 {
 public:
+	StateMachine();
 	StateMachine(TArray<State*> states);
 
 	void step();
